@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+    <body>
+        <div>
+            <h1 class="title">Customer Survey Form</h1>
+        </div>
+        <form id="survey-form" class="frame">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="First name" class="start input" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="Last Name" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="email-id">Email:</label>
+                <input type="email" id="email-id" name="Email" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="Date Of Birth" class="input" required>
+            </div>
+            <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="Country" class="input" required>
+                <option value="" disabled selected>---Select---</option>
+                <option value="australia">Australia</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="china">China</option>
+                <option value="egypt">Egypt</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="India">India</option>
+                <option value="italy">Italy</option>
+                <option value="japan">Japan</option>
+                <option value="kenya">Kenya</option>
+                <option value="mexico">Mexico</option>
+                <option value="others">Others</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="Gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-group">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="Profession" class="input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="Contact Details" class="input" required>
+            </div>
+
+            <button type="submit" id="submit-button">Submit</button>
+            <button type="reset" id="reset-button">Reset</button>
+        </form>
+        <div id="popup" class="hidden">
+            <div id="popup-content">
+                <h2>Form Details</h2>
+                <div id="popup-values"></div>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+        <script src="./form.js"></script>
+    </body>
+</html>

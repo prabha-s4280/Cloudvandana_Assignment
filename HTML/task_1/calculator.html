@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <input type="text" id="input" class="input-text" readonly>
+            <button class="all-clear" onclick="allClear()">AC</button>
+            <div class="buttons">
+                <button class="black" onclick="addNumberToInput('9')">9</button>
+                <button class="black" onclick="addNumberToInput('8')">8</button>
+                <button class="black" onclick="addNumberToInput('7')">7</button>
+                <button class="grey" onclick="addOperatorToInput('+')">+</button>
+                <button class="black" onclick="addNumberToInput('4')">4</button>
+                <button class="black" onclick="addNumberToInput('5')">5</button>
+                <button class="black" onclick="addNumberToInput('6')">6</button>
+                <button class="grey" onclick="addOperatorToInput('-')">-</button>
+                <button class="black" onclick="addNumberToInput('1')">1</button>
+                <button class="black" onclick="addNumberToInput('2')">2</button>
+                <button class="black" onclick="addNumberToInput('3')">3</button>
+                <button class="grey" onclick="addOperatorToInput('/')">&divide;</button>
+                <button class="black" onclick="addNumberToInput('.')">.</button>
+                <button class="black" onclick="addNumberToInput('0')">0</button>
+                <button class="black" onclick="finalResult()">=</button>
+                <button class="grey" onclick="addOperatorToInput('*')">&times;</button>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

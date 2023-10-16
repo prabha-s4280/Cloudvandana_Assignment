@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(15, 143, 241);
+    text-align: center;
+    height: 100vh;
+    font-family:Roboto;
+}
+.frame{
+    text-align: center;
+    margin: 10px auto;
+    background-color: white;
+    height: 100vh;
+    width:65%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    font-family: Roboto;
+    font-weight: 600;
+    color: white;
+}
+.start{
+    margin-top:30px;
+}
+
+label{
+    display:inline-block;
+    margin-bottom: 40px;
+}
+button{
+    padding:10px;
+    margin:10px;
+}
+.input{
+    width:320px;
+    border-top:solid 1px;
+    height:38px;
+}
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#close-popup {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
